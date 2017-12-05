@@ -10,18 +10,17 @@
     <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
     <script src="components/set-image.js"></script>
-    <script src="components/customEnterVR.js"></script>
   </head>
   <body>
     <a-scene>
       <a-assets>
-        <img id="city" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/23167690_1710724702271597_969538844230885447_n.jpg?oh=d3bc40535ba0516ed4a7a69e5d678b65&oe=5AC955E8">
-        <img id="cubes" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/14572368_1541399855886376_5791530445074361234_n.jpg?oh=bc55d9cc4ad3cda715a4ec01fa182b94&oe=5A90BD57">
-        <img id="sechelt" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/17626472_1477384712272265_6114432724968742406_n.jpg?oh=62725955ddaa6f4413533c77e8c09fca&oe=5AC92931">
+        <img id="joe" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/23167690_1710724702271597_969538844230885447_n.jpg?oh=d3bc40535ba0516ed4a7a69e5d678b65&oe=5AC955E8">
+        <img id="logo" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/14572368_1541399855886376_5791530445074361234_n.jpg?oh=bc55d9cc4ad3cda715a4ec01fa182b94&oe=5A90BD57">
+        <img id="headset" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/17626472_1477384712272265_6114432724968742406_n.jpg?oh=62725955ddaa6f4413533c77e8c09fca&oe=5AC92931">
 
-        <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
-        <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
-        <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+        <img id="joe-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/24796595_1677831015602632_6030457390555698103_n.jpg?oh=7e2cc08dff92f1b80a8cf7e49c83958b&oe=5AD5B7EC">
+        <img id="logo-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/24301289_1677831022269298_3865809426712814554_n.jpg?oh=e0a8a257c9ca268b100e0fbda08845f0&oe=5A9311E7">
+        <img id="headset-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/24862624_1677831018935965_5585472057928810433_n.jpg?oh=c6d0f4a1db328a0087bc4dfc30a21236&oe=5AD726C9">
 
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio
 
@@ -40,13 +39,13 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#city"></a-sky>
+      <a-sky id="image-360" radius="10" src="#headset"></a-sky>
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-        <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#logo" data-thumb="#logo-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#joe" data-thumb="#joe-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#headset" data-thumb="#headset-thumb"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->
