@@ -10,17 +10,20 @@
     <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
     <script src="components/set-image.js"></script>
+    <script src="components/customEnterVR.js"></script>
   </head>
   <body>
     <a-scene>
       <a-assets>
-        <img id="city" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
+        <img id="city" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/23167690_1710724702271597_969538844230885447_n.jpg?oh=d3bc40535ba0516ed4a7a69e5d678b65&oe=5AC955E8">
+        <img id="cubes" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/14572368_1541399855886376_5791530445074361234_n.jpg?oh=bc55d9cc4ad3cda715a4ec01fa182b94&oe=5A90BD57">
+        <img id="sechelt" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/17626472_1477384712272265_6114432724968742406_n.jpg?oh=62725955ddaa6f4413533c77e8c09fca&oe=5AC92931">
+
         <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
         <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
         <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
-        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        <img id="cubes" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
-        <img id="sechelt" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+
+        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio
 
         <!-- Image link template to be reused. -->
         <script id="link" type="text/html">
@@ -57,5 +60,6 @@
           raycaster="objects: .link"></a-cursor>
       </a-entity>
     </a-scene>
+    <button click="customEnterVR()">CLICK ME</button>
   </body>
 </html>
