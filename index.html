@@ -14,13 +14,13 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="joe" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/23167690_1710724702271597_969538844230885447_n.jpg?oh=d3bc40535ba0516ed4a7a69e5d678b65&oe=5AC955E8">
-        <img id="logo" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/14572368_1541399855886376_5791530445074361234_n.jpg?oh=bc55d9cc4ad3cda715a4ec01fa182b94&oe=5A90BD57">
-        <img id="headset" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/17626472_1477384712272265_6114432724968742406_n.jpg?oh=62725955ddaa6f4413533c77e8c09fca&oe=5AC92931">
+        <img id="louvre" crossorigin="anonymous" src="https://github.com/CodyNicholson/DePaul_Virtual_Reality_Society_Website_Project/blob/master/pics/1.jpg?raw=true">
+        <img id="radiation" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26903967_1724417770943956_2312256838418004761_n.jpg?oh=1ec9fc5b92e1048e9265f1c67d782449&oe=5ADB0A4D">
+        <img id="grand" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26230736_1724417774277289_7636537630612958423_n.jpg?oh=0ad961f4999f84d32fe900eddb1a36fb&oe=5AF822BC">
 
-        <img id="joe-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/24796595_1677831015602632_6030457390555698103_n.jpg?oh=7e2cc08dff92f1b80a8cf7e49c83958b&oe=5AD5B7EC">
-        <img id="logo-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/24301289_1677831022269298_3865809426712814554_n.jpg?oh=e0a8a257c9ca268b100e0fbda08845f0&oe=5A9311E7">
-        <img id="headset-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/24862624_1677831018935965_5585472057928810433_n.jpg?oh=c6d0f4a1db328a0087bc4dfc30a21236&oe=5AD726C9">
+        <img id="louvre-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/18952618_1724417824277284_6244560123250130216_n.jpg?oh=0ac8fb8e13dfe0667e6945be94d89adf&oe=5ADF7C49">
+        <img id="radiation-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26907688_1724417817610618_7844515013414053205_n.jpg?oh=31ab63bd3d0d9e17bd2b53431042d2c3&oe=5AFC7A10">
+        <img id="grand-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26733764_1724417814277285_1068674181458511245_n.jpg?oh=daf083c9e866b7a8d4cfd949fe66b969&oe=5AE2BDAE">
 
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio
 
@@ -39,13 +39,13 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#headset"></a-sky>
+      <a-sky id="image-360" radius="10" src="#louvre"></a-sky>
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-        <a-entity template="src: #link" data-src="#logo" data-thumb="#logo-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#joe" data-thumb="#joe-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#headset" data-thumb="#headset-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#radiation" data-thumb="#radiation-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#louvre" data-thumb="#louvre-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#grand" data-thumb="#grand-thumb"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->
