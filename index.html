@@ -14,13 +14,15 @@
   <body>
     <a-scene>
       <a-assets>
-        <img id="louvre" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/19554877_1724417777610622_7794458081929704924_n.jpg?oh=7202ddaf779b919873e622ea985b4f14&oe=5ADDF160">
-        <img id="radiation" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26903967_1724417770943956_2312256838418004761_n.jpg?oh=1ec9fc5b92e1048e9265f1c67d782449&oe=5ADB0A4D">
-        <img id="grand" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26230736_1724417774277289_7636537630612958423_n.jpg?oh=0ad961f4999f84d32fe900eddb1a36fb&oe=5AF822BC">
+        <!-- Images -->
+        <img id="img1" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/19554877_1724417777610622_7794458081929704924_n.jpg?oh=7202ddaf779b919873e622ea985b4f14&oe=5ADDF160">
+        <img id="img2" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26903967_1724417770943956_2312256838418004761_n.jpg?oh=1ec9fc5b92e1048e9265f1c67d782449&oe=5ADB0A4D">
+        <img id="img3" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26230736_1724417774277289_7636537630612958423_n.jpg?oh=0ad961f4999f84d32fe900eddb1a36fb&oe=5AF822BC">
 
-        <img id="louvre-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/18952618_1724417824277284_6244560123250130216_n.jpg?oh=0ac8fb8e13dfe0667e6945be94d89adf&oe=5ADF7C49">
-        <img id="radiation-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26907688_1724417817610618_7844515013414053205_n.jpg?oh=31ab63bd3d0d9e17bd2b53431042d2c3&oe=5AFC7A10">
-        <img id="grand-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26733764_1724417814277285_1068674181458511245_n.jpg?oh=daf083c9e866b7a8d4cfd949fe66b969&oe=5AE2BDAE">
+        <!-- Image thumbnails -->
+        <img id="img1-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/18952618_1724417824277284_6244560123250130216_n.jpg?oh=0ac8fb8e13dfe0667e6945be94d89adf&oe=5ADF7C49">
+        <img id="img2-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26907688_1724417817610618_7844515013414053205_n.jpg?oh=31ab63bd3d0d9e17bd2b53431042d2c3&oe=5AFC7A10">
+        <img id="img3-thumb" crossorigin="anonymous" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/26733764_1724417814277285_1068674181458511245_n.jpg?oh=daf083c9e866b7a8d4cfd949fe66b969&oe=5AE2BDAE">
 
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio
 
@@ -39,13 +41,13 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#louvre"></a-sky>
+      <a-sky id="image-360" radius="10" src="#img1"></a-sky>
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-        <a-entity template="src: #link" data-src="#radiation" data-thumb="#radiation-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#louvre" data-thumb="#louvre-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#grand" data-thumb="#grand-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#img1" data-thumb="#img1-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#img2" data-thumb="#img2-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#img3" data-thumb="#img3-thumb"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->
